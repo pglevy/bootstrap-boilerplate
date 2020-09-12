@@ -1,2 +1,2 @@
 # simple-bootstrap
-default jekyll site with bootstrap gem
+default jekyll site with bootstrap
