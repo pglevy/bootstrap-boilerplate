@@ -1,12 +1,81 @@
 ---
 ---
 
-$primary:    #20bf55;
+// 👆 Remember the front matter dashes.
 
+//////////////
+// Typography
+//////////////
+
+// Import Google Font.
+// @import url('https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&display=swap');
+
+// Copy the Bootstrap $font-family-sans-serif to make adjustments and reuse in $font-family-base.
+// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-base:            'Helvetica', $font-family-sans-serif !default;
+
+// Set font for headings.
+// $headings-font-family:        'Bitter', serif !default;
+
+//////////////
+// Color
+//////////////
+
+// Set the primary and secondary brand colors.
+// $primary:    #20bf55;
+// secondary:    #20bf55;
+
+// Create variations because Bootstrap doesn't handle this well yet.
+// $primary-light: ;
+// $primary-dark: ;
+// $secondary-light: ;
+// $secondary-dark: ;
+
+// Set this value low enough to ensure you get WCAG-compliant color contrast when Bootstrap auto-selects foreground color based on background color. Double check the result.
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-$yiq-contrasted-threshold:  100 !default;
+$yiq-contrasted-threshold:  100;
 
+// Set the named colors used for feedback.
+// Success
+// $green:   #28a745 !default;
+// Info
+// $cyan:    #17a2b8 !default;
+// Warning
+// $yellow:  #ffc107 !default;
+// Danger
+// $red:     #dc3545 !default;
 
+// Grays
+// Go with default grays for now.
+
+//////////////
+// Spacing
+//////////////
+
+// Replace spacer 5 and add some spacers to the existing map.
+$spacer: 1rem; //default
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 2),
+  6: ($spacer * 3),
+  7: ($spacer * 3.5),
+  8: ($spacer * 4),
+  9: ($spacer * 4.5)
+);
+
+// Use the spacers for button and input padding and adjust for base-8 approach.
+$input-btn-padding-y:         .5rem;
+$input-btn-padding-x:         1rem;
+
+$input-btn-padding-y-sm:      .25rem;
+$input-btn-padding-x-sm:      .5rem;
+
+$input-btn-padding-y-lg:      1rem;
+$input-btn-padding-x-lg:      1.5rem;
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
