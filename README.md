@@ -10,3 +10,14 @@ default jekyll site with bootstrap
 ## Notes
 - Stylesheet path for built site is `assets/css/main.css`.
 - For js, start with slim jQuery using CDN. Then include Bootstrap bundled source (with Popper) locally with `assets/bs/js/bootstrap.bundle.min.js`. (Remember to include .map file in source js folder.)
+
+## Things I may need to edit source code for
+- spacers
+
+## Basic branding variables to set
+- $font-family-base:            $font-family-sans-serif !default;
+- $font-size-base:              1rem !default;
+- $primary:       $blue !default;
+- $secondary:     $gray-600 !default;
+- $link-color:                              theme-color("primary") !default;
+- navs
