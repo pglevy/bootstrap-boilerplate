@@ -17,6 +17,7 @@ GEM
     commonmarker (0.17.13)
       ruby-enum (~> 0.5)
     concurrent-ruby (1.1.7)
+    deep_merge (1.2.1)
     dnsruby (1.61.4)
       simpleidn (~> 0.1)
     em-websocket (0.5.1)
@@ -116,6 +117,9 @@ GEM
       jekyll (~> 3.0)
     jekyll-feed (0.13.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-get-json (0.0.2)
+      deep_merge (~> 1.2)
+      jekyll (>= 3.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
     jekyll-github-metadata (2.13.0)
@@ -253,6 +257,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-get-json (~> 0.0.2)
 
 BUNDLED WITH
    2.1.4

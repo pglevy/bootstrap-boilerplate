@@ -14,9 +14,18 @@
     <div class="container">
     {{content}}
 
-    {% for thing in site.things %}
-      {{ thing }}
+    {% for item in site.data.episodes.items %}
+      <h2>{{ item.title }}</h2>
+      <small>{{ item.date_published }}</small>
+
+      <div id="buzzsprout-player-{{ item.guid | remove: "Buzzsprout-"}}">
+        <iframe src="https://www.buzzsprout.com/1341670/{{ item.guid | remove: 'Buzzsprout-'}}-17-money-mistakes-to-avoid-as-an-adult-get-ahead-in-your-teens?client_source=small_player&amp;iframe=true&amp;referrer=https://www.buzzsprout.com/1341670/5380684-17-money-mistakes-to-avoid-as-an-adult-get-ahead-in-your-teens.js?container_id=buzzsprout-player-5380684&amp;player=small" width="100%" height="200" frameborder="0" scrolling="no" title="Money Moves for Teens, 17. Money mistakes to avoid as an adult (get ahead in your teens)"></iframe>
+      </div>
+
+      <div>{{ item.content_html}}</div>
     {% endfor %}
+
+
 
     <a class="btn btn-primary mt-9" href="#">Check out my latest episode</a>
 

@@ -5,3 +5,10 @@ collections:
   things:
     sort_by: order
     output: true
+
+plugins:
+  - jekyll-get-json
+
+jekyll_get_json:
+  - data: episodes
+    json: 'https://feed2json.org/convert?url=https%3A%2F%2Ffeeds.buzzsprout.com%2F1341670.rss'
