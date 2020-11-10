@@ -1,3 +1,5 @@
+baseurl: /bootstrap-boilerplate
+
 sass:
   sass_dir: assets/bootstrap/scss
 
