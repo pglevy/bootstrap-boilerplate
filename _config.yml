@@ -12,5 +12,5 @@ plugins:
   - jekyll-get-json
 
 jekyll_get_json:
-  - data: episodes
-    json: 'https://feed2json.org/convert?url=https%3A%2F%2Ffeeds.buzzsprout.com%2F1341670.rss'
+  - data: tokens
+    json: 'https://v1.nocodeapi.com/pglevy/airtable/LDTzULYnuAgBNkGH?tableName=tokens'

@@ -1,6 +1,11 @@
 ---
 ---
 
+{% for token in site.data.tokens.records %}
+{{token.fields.name}}: {{token.fields.value}};
+{% endfor %}
+
+
 // 👆 Remember the front matter dashes.
 
 //////////////
@@ -22,8 +27,9 @@
 //////////////
 
 // Set the primary and secondary brand colors.
-// $primary:    #20bf55;
-// secondary:    #20bf55;
+
+// $primary:    {{my_variable}};
+// $secondary:    #20bf55;
 
 // Create variations because Bootstrap doesn't handle this well yet.
 // $primary-light: ;
